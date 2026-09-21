@@ -5,25 +5,25 @@ const plates = [
   {
     name: "Our First Kiss",
     message: "The day our lips met, the entire universe held its breath. Since then, every kiss of yours is my favorite galaxy.",
-    src: "Tra1.jpg",
+    src: "Huong1.jpg",
     hue: 340,
   },
   {
     name: "Under the Stars",
     message: "That night we looked at the sky together and I understood that no star shines as bright as your eyes when you look at me.",
-    src: "Tra1.jpg",
+    src: "Huong2.jpg",
     hue: 280,
   },
   {
     name: "Your Smile",
     message: "Your smile is the light that cuts through any darkness. It is my favorite sunrise, my reason to wake up every day.",
-    src: "Tra4.png",
+    src: "Huong3.jpg",
     hue: 350,
   },
   {
     name: "Forever",
     message: "I don't care how many lives I have to live, in each one of them I will choose you. Forever and one day more.",
-    src: "Tra4.png",
+    src: "Huong4.jpg",
     hue: 320,
   },
 ];
@@ -346,7 +346,7 @@ function generatePlates() {
 }
 
 function generateText() {
-  const phrases = ["KEEP GOING ✦", "YOU CAN DO IT", "STAY STRONG", "BELIEVE IN YOURSELF"];
+  const phrases = ["MY SWEET HUONG ♥", "ALWAYS WITH YOU ♥", "MISS YOU SO MUCH ♥", "LOVE YOU FOREVER ♥"];
   const group = new THREE.Group();
   const meshes = [];
   scene.add(group);
@@ -359,7 +359,7 @@ function generateText() {
     ctx.shadowColor = "rgba(255,80,150,1)";
     ctx.shadowBlur = 24;
     ctx.fillStyle = "rgba(255,240,245,1)";
-    ctx.font = "bold 58px monospace";
+    ctx.font = 'bold 58px "Segoe UI", Arial, sans-serif';
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText(phrase, 512, 64);
